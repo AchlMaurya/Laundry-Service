@@ -1,0 +1,160 @@
+/* Dashboard Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Main Content */
+.mainContent {
+  width: 80%;
+  max-width: 900px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Orders Section */
+.ordersSection {
+  text-align: center;
+  padding: 20px;
+}
+
+.ordersSection h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* No Orders Available */
+.noOrders {
+  background-color: #ffe6e6;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.noOrders p {
+  font-size: 18px;
+  color: #ff3333;
+  margin-bottom: 10px;
+}
+
+.createButton {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.createButton:hover {
+  background-color: #0056b3;
+}
+
+/* Orders List */
+.ordersList {
+  margin-top: 20px;
+}
+
+.orderItem {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 5px solid #007bff;
+  text-align: left;
+}
+
+.orderItem p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Navigation Links */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.navLinks span {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.navLinks span:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* Profile Image */
+.profileImg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mainContent {
+    width: 95%;
+  }
+
+  .createButton {
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navLinks {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile {
+    margin-top: 10px;
+  }
+}
